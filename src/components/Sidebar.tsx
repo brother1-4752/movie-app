@@ -12,7 +12,7 @@ const SidebarWrapper = styled.section`
   width: 65px;
   height: 100%;
   position: fixed;
-  top: 51px;
+  top: 52px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.5px 5px 0.2px ${(props) => props.theme.textColor};

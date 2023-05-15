@@ -1,7 +1,7 @@
 import ErrorBoundary from "./components/ErrorBoundary";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./routes/Home";
-import Movie from "./routes/Movie";
+import MovieDetail from "./routes/MovieDetail";
 
 interface IRouter {
   id: number;
@@ -21,7 +21,7 @@ const routerData: IRouter[] = [
   {
     id: 2,
     path: "/movies/:movieId",
-    element: <Movie />,
+    element: <MovieDetail />,
     errorElement: <ErrorBoundary />,
   },
 ];

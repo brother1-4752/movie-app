@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     svg:hover {
         box-shadow: 0 2px 5px 1px ${(props) => props.theme.textColor};
         border-radius: 8px;
+        cursor: pointer;
     }
 `;
 
