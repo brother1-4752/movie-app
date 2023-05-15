@@ -6,6 +6,7 @@ import GlobalStyle from "./GlobalStyle";
 import { router } from "./Router";
 import { RouterProvider } from "react-router-dom";
 import DarkMode from "./components/DarkMode";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   const isDark = useRecoilValue(isDarkState);
@@ -13,6 +14,7 @@ function App() {
   return (
     <ThemeProvider theme={isDark ? darkMode : lightMode}>
       <DarkMode />
+      <Sidebar />
       <GlobalStyle />
       <RouterProvider router={router} />
     </ThemeProvider>
